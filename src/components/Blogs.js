@@ -4,7 +4,7 @@ import Spinner from "./Spinner";
 import Card from "./Card";
 function Blogs() {
   const { loading, posts } = useContext(AppContext);
-  console.log(posts);
+  
 
   return (
     <div className="my-[100px]">
