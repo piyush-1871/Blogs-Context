@@ -3,7 +3,9 @@ import './Spinner.css'
 
 function Spinner() {
   return (
-    <div className='custom-loader'></div>
+    <div className="container">
+      <div className='custom-loader'></div>
+    </div>
   )
 }
 

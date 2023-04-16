@@ -16,7 +16,7 @@ export default function App() {
   },[]);
 
   
-  return <div>
+  return <div className="w-full h-screen flex flex-col">
     <Header />
     <Blogs />
     <Pageination />

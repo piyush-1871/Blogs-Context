@@ -7,15 +7,22 @@ function Blogs() {
   console.log(posts);
 
   return (
-    <div>
+    <div className="my-[100px]">
       {loading ? (
-        <Spinner />
+        <div className="min-h-[80vh] w-full flex flex-col justify-center items-center">
+          <Spinner />
+          <p className="text-center font-bold mt-6 text-3xl">Loading!</p>
+        </div>
       ) : posts.length === 0 ? (
         <div>
           <p>No Post Found!</p>
         </div>
       ) : (
-        posts.map((post) => (<Card key={post.id} post = {post} />))
+        posts.map((post) => (
+          <div className="flex flex-col gap-y-10 my-4">
+            <Card key={post.id} post={post} />
+          </div>
+        ))
       )}
     </div>
   );
