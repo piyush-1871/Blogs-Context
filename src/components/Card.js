@@ -11,7 +11,7 @@ function Card({ post }) {
       <p>{post.content}</p>
       <div>
         {post.tags.map((tag, index) => {
-          return <span key={index}>{`#${tag}`}</span>;
+          return <span key={index}>{`#${tag}`} </span>;
         })}
       </div>
     </div>
